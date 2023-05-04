@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andy Brocklesby | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="body">
+    <!-------------------------------HEADER
+        Consists of:
+        - Navigation links
+        - Logo
+        - Contact button
+        -------------------------->
+    <header>
+        <div class="header-container">
+            <div class="nav-items">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link">Portfolio</a>
+            </div>
+            <img src="/Site_Photos/plants-bg.jpeg" alt="Andy's portfolio logo" class="nav-logo" onclick="goToHome()">
+            <div class="nav-resume-btn" onclick="goToResume()">Resume</div>
+            <img src="https://static.thenounproject.com/png/1056436-200.png" alt="mobile menu button"
+                class="mobile-menu-btn" onclick="toggleMobileMenu()">
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-items">
+            <a href="#" class="mobile-link">Home</a>
+            <a href="#" class="mobile-link">About</a>
+            <a href="#" class="mobile-link">Portfolio</a>
+        </div>
+    </div>
+
+    <div class="page-gap"></div>
+
+    <!-------------------------------HERO
+    Consists of:
+    - Hero image on left
+    - Hero title
+    - Hero text
+    ------------------------------->
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-left">
+                <img src="/Site_Photos/plants-bg.jpeg" alt="Image of Andy coding" class="hero-image">
+            </div>
+            <div class="hero-right">
+                <h1 class="hero-title"><span id="developing">Developing</span>, <br>for a Better <br> <span
+                        id="future">Future</span></h1>
+                <p class="hero-text">As a developer working behind the scenes, I get to create a modern, intuative
+                    experience for the users to enjoy. <span id="motto">Wonderfully simple. Simply wonderful.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="page-gap"></div>
+
+    <!------------------------------Why
+        Consists of:
+        - Contrasting background
+        - Wowing title
+        - Small explanation
+        ---->
+
+    <section class="why">
+        <div class="why-container">
+            <div class="why-content">
+                <div class="why-title">
+                    I'm not just building a product. I'm building an experience.
+                </div>
+                <div class="why-text">
+                    A website is a powerful tool. You can make sales. Find the perfect plant. Find love. Book a cruise.
+                    Just about anything. I believe in simplifying the internet. I want everything to be beautiful,
+                    clear, and bright. Soft and easy for the user to feel calm and in charge. Let's get to work and
+                    change the mainstream!
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------About
+    Consists of:
+    - About title
+    - Catchy leading title
+    - Education, Degree, Certificate
+    - Groups, Teamwork
+    - Summary of where I want to be
+
+    Layout:
+    - Text on left
+    - Image on right
+    ----------------------------------->
+
+    <section class="about-index">
+        <div class="about-index-container">
+            <div class="about-index-left">
+                <div class="about-index-title">About</div>
+                <div class="about-index-subtitle">Turning dreams to reality...</div>
+                <div class="about-index-education">
+                    <span id="important-info">Graduated with my Bachelor's in Game Development and a certificate in
+                        Front-End Web
+                        Development at
+                        the University of Arkansas</span>. I am in progress through Udemy's Web Development course, and
+                    interested in Scrimba courses in the future. I want to achieve a Back-End development certificate by
+                    Spring of 2024!
+                </div>
+                <div class="about-index-groups">
+                    Currently a Computer Support Technician & Supervisor at the University of Arkansas. Working with the
+                    students is an absolute inspiration. They are such a high frequency which brings hope for the
+                    future!
+                    I am also the club advisor for UARK Gaming. I love being able to support this generation of
+                    students at the University.
+                </div>
+                <div class="about-index-summary">
+                    I love investing in myself and giving myself what I truly deserve, which is a career in tech.
+                    I am excited to see what the possibilites are in 2023!
+                </div>
+                <div class="about-index-btn">More about me</div>
+            </div>
+            <div class="about-index-right">
+                <img src="/Site_Photos/plants-bg.jpeg" alt="" class="about-index-image">
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------------SKILLS
+    Consists of:
+    - Section title
+    - Subtitle ("What I can do with you")
+    - Image on left w/ text underneath
+    - Skill icons on the right
+    - Portfolio button underneath
+    ------------------------------------->
+
+    <section class="skills">
+        <div class="skills-container">
+            <div class="skills-content">
+                <div class="skills-top">
+                    <div class="skills-title">Skills</div>
+                    <div class="skills-subtitle">What I can do for you 🙌</div>
+                </div>
+                <div class="skills-middle">
+                    <div class="skills-left">
+                        <img src="/Site_Photos/plants-bg.jpeg" alt="" class="skills-image">
+                        <div class="skills-image-title">Web Development</div>
+                        <div class="skills-image-text">Develop a website with HTML, CSS, JavaScript, Bootsrap & React
+                        </div>
+                    </div>
+                    <div class="skills-right">
+                        <div class="card-content">
+                            <img src="/Site_Photos/HTML_logo.png" alt="" class="card-image">
+                            <div class="card-title">HTML</div>
+                        </div>
+                        <div class="card-content">
+                            <img src="/Site_Photos/CSS_logo.png" alt="" class="card-image">
+                            <div class="card-title">CSS</div>
+                        </div>
+                        <div class="card-content">
+                            <img src="/Site_Photos/JavaScript_logo.png" alt="" class="card-image">
+                            <div class="card-title">JavaScript</div>
+                        </div>
+                        <div class="card-content">
+                            <img src="/Site_Photos/Bootstrap_logo.png" alt="" class="card-image">
+                            <div class="card-title">Bootstrap</div>
+                        </div>
+                        <div class="card-content">
+                            <img src="/Site_Photos/React_logo.png" alt="" class="card-image">
+                            <div class="card-title">React</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-bottom">
+                    <a href="#" class="portfolio-btn">Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <img src="/Site_Photos/plants-bg.jpeg" alt="" class="footer-logo">
+                </div>
+                <div class="footer-right">
+                    <div class="footer-title">Let's Work Together! 🤝</div>
+                    <form action="https://formspree.io/f/xayzvjeg" method="POST" class="footer-form" target="_blank">
+
+                        <input type="text" name="full-name" placeholder="Full Name"
+                            class="footer-input footer-input-sml" required>
+
+                        <input type="email" name="email" placeholder="Email" class="footer-input footer-input-sml"
+                            required>
+
+                        <textarea name="message" class="footer-input footer-message" placeholder="Your Message Here:"
+                            rows="7" maxlength="500" required></textarea>
+
+                        <!-- your other form fields go here -->
+                        <button type="submit" class="form-btn">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script>
+
+    function goToHome() {
+        window.location.href = 'index.html';
+    }
+
+    function goToResume() {
+        window.location.href = 'resume.html';
+    }
+
+    function toggleMobileMenu() {
+        let mobileMenu = document.getElementById('mobile-menu');
+        let screenWidth = window.screen.width;
+
+        if (screenWidth >= 765) {
+            if (mobileMenu.style.display === 'none') {
+                mobileMenu.style.display = 'block';
+            }
+            else {
+                mobileMenu.style.display = 'none';
+            }
+        }
+        else {
+            mobileMenu.style.display = 'none';
+        }
+    }
+
+</script>
+
+</html>
