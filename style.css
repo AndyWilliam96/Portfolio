@@ -17,6 +17,21 @@ body {
     height: 150px;
 }
 
+.wip-bar {
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(255, 84, 84);
+    padding: 20px 0;
+}
+
+.wip-bar-content {
+    margin: auto;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
 /*----------------------------------HEADER-----------------------------------*/
 
 header {
