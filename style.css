@@ -726,6 +726,20 @@ header {
     padding: 100px 50px;
 }
 
+.resume-back-btn {
+    background-color: rgb(255, 118, 118);
+    width: fit-content;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.resume-back-btn:hover {
+    background-color: orange;
+}
+
 .resume-left {
     flex-basis: 50%;
     display: flex;
@@ -844,7 +858,8 @@ header {
 
     .resume-right {
         justify-content: center;
-
+        align-items: center;
+        text-align: center;
     }
 
     .resume-contact {
@@ -852,4 +867,15 @@ header {
         align-items: center;
         text-align: center;
     }
+
+    .resume-bullets {
+        font-size: 12px;
+    }
+
+    .resume-education,
+    .resume-skills {
+        text-align: center;
+    }
+
+
 }
