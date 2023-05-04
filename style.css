@@ -25,6 +25,7 @@ body {
 }
 
 .wip-bar-content {
+    max-width: 80%;
     margin: auto;
     text-align: center;
     font-size: 15px;
