@@ -14,7 +14,7 @@
         rel="stylesheet">
 </head>
 
-<body id="body">
+<body id="body" onload="setupUser()">
     <!----------------------TEST IN PROGRESS BAR----------------->
     <div class="wip-bar">
         <div class="wip-bar-content">🤖 Website Under Development. This is not a complete product. Sorry if a few things
@@ -33,7 +33,10 @@
                 <a href="#" class="nav-link">Home</a>
                 <a href="#" class="nav-link">About</a>
                 <a href="#" class="nav-link">Portfolio</a>
-                <a href="#" class="nav-link">View My Code 🔎</a>
+                <div class="dark-mode-toggle-container" onclick="toggleDarkMode()">
+                    <img src="Site_Photos/sun.png" alt="" class="dark-mode-toggle-sun" id="sun">
+                    <img src="Site_Photos/moon.png" alt="" class="dark-mode-toggle-moon" id="moon">
+                </div>
             </div>
             <img src="Site_Photos/plants-bg.jpeg" alt="Andy's portfolio logo" class="nav-logo" onclick="goToHome()">
             <div class="nav-resume-btn" onclick="goToResume()">Resume</div>
@@ -233,6 +236,12 @@
 
 <script>
 
+    function setupUser() {
+        if (localStorage.getItem('isDark') === null) {
+            localStorage.setItem('isDark', 'True');
+        }
+    }
+
     function goToHome() {
         window.location.href = 'index.html';
     }
@@ -243,6 +252,32 @@
 
     function goToLinkedin() {
         window.location.href = 'https://www.linkedin.com/in/andrewbrocklesby/';
+    }
+
+    function toggleDarkMode() {
+        let theSun = document.getElementById('sun');
+        let theMoon = document.getElementById('moon');
+        let darkStorage = localStorage.getItem('isDark');
+        let pageBody = document.getElementById('body');
+
+        if (darkStorage === 'True') {
+            localStorage.setItem('isDark', 'False');
+            theSun.style.transform = 'translateY(50px)';
+            theMoon.style.transform = 'translateY(-55px)';
+            pageBody.style.backgroundColor = 'rgb(44, 46, 79)';
+            pageBody.style.color = 'white';
+        }
+        else {
+            localStorage.setItem('isDark', 'True');
+            theSun.style.transform = 'translateY(0px)';
+            theMoon.style.transform = 'translateY(50px)';
+            pageBody.style.background = 'white';
+            pageBody.style.color = 'black';
+        }
+
+
+
+
     }
 
     function toggleMobileMenu() {
