@@ -30,9 +30,9 @@
     <header>
         <div class="header-container">
             <div class="nav-items">
-                <a href="#" class="nav-link">Home</a>
-                <a href="#" class="nav-link">About</a>
-                <a href="#" class="nav-link">Portfolio</a>
+                <a href="#" id="nav-link" class="nav-link">Home</a>
+                <a href="#" id=nav-link class="nav-link">About</a>
+                <a href="#" id="nav-link" class="nav-link">Portfolio</a>
                 <div class="dark-mode-toggle-container" onclick="toggleDarkMode()">
                     <img src="Site_Photos/sun.png" alt="" class="dark-mode-toggle-sun" id="sun">
                     <img src="Site_Photos/moon.png" alt="" class="dark-mode-toggle-moon" id="moon">
@@ -40,18 +40,26 @@
             </div>
             <img src="Site_Photos/plants-bg.jpeg" alt="Andy's portfolio logo" class="nav-logo" onclick="goToHome()">
             <div class="nav-resume-btn" onclick="goToResume()">Resume</div>
-            <img src="https://static.thenounproject.com/png/1056436-200.png" alt="mobile menu button"
-                class="mobile-menu-btn" onclick="toggleMobileMenu()">
+        </div>
+
+        <div class="header-mobile">
+            <div class="header-mobile-container">
+                <div class="header-mobile-content">
+                    <img src="Site_Photos/plants-bg.jpeg" alt="Andy's portfolio logo" class="nav-logo"
+                        onclick="goToHome()">
+                    <div class="nav-items">
+                        <a href="#" id="nav-link" class="nav-link">Home</a>
+                        <a href="#" id=nav-link class="nav-link">About</a>
+                        <a href="#" id="nav-link" class="nav-link">Portfolio</a>
+                        <div class="dark-mode-toggle-container" onclick="toggleDarkMode()">
+                            <img src="Site_Photos/sun.png" alt="" class="dark-mode-toggle-sun" id="sun">
+                            <img src="Site_Photos/moon.png" alt="" class="dark-mode-toggle-moon" id="moon">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
-
-    <div class="mobile-menu" id="mobile-menu">
-        <div class="mobile-menu-items">
-            <a href="#" class="mobile-link">Home</a>
-            <a href="#" class="mobile-link">About</a>
-            <a href="#" class="mobile-link">Portfolio</a>
-        </div>
-    </div>
 
     <div class="page-gap"></div>
 
@@ -259,6 +267,10 @@
         let theMoon = document.getElementById('moon');
         let darkStorage = localStorage.getItem('isDark');
         let pageBody = document.getElementById('body');
+        let navLinks = document.getElementsByClassName('nav-link');
+
+
+
 
         if (darkStorage === 'True') {
             localStorage.setItem('isDark', 'False');
@@ -266,6 +278,12 @@
             theMoon.style.transform = 'translateY(-55px)';
             pageBody.style.backgroundColor = 'rgb(44, 46, 79)';
             pageBody.style.color = 'white';
+            for (let i = 0; i < navLinks.length; i++) {
+                navLinks[i].style.color = 'white';
+            }
+            document.getElementsByClassName('hero-title')[0].style.color = 'orange';
+            document.getElementsByClassName('why-title')[0].style.color = 'orange';
+            document.getElementsByClassName('why')[0].style.backgroundColor = '#002357';
         }
         else {
             localStorage.setItem('isDark', 'True');
@@ -273,27 +291,11 @@
             theMoon.style.transform = 'translateY(50px)';
             pageBody.style.background = 'white';
             pageBody.style.color = 'black';
-        }
-
-
-
-
-    }
-
-    function toggleMobileMenu() {
-        let mobileMenu = document.getElementById('mobile-menu');
-        let screenWidth = window.screen.width;
-
-        if (screenWidth >= 765) {
-            if (mobileMenu.style.display === 'none') {
-                mobileMenu.style.display = 'block';
+            for (let i = 0; i < navLinks.length; i++) {
+                navLinks[i].style.color = 'black';
             }
-            else {
-                mobileMenu.style.display = 'none';
-            }
-        }
-        else {
-            mobileMenu.style.display = 'none';
+            document.getElementsByClassName('hero-title')[0].style.color = 'rgb(81, 96, 81)';
+            document.getElementsByClassName('why')[0].style.backgroundColor = 'rgb(255, 248, 236)';
         }
     }
 
