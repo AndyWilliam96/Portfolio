@@ -10,11 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
-<body class="resume-body">
+<body class="resume-body" onload="loadResume()">
     <div class="resume-container">
         <div class="resume-content">
             <div class="resume-left">
                 <div class="resume-back-btn" onclick="goHome()">Go Back</div>
+                <div class="dark-mode-toggle-container" onclick="toggleDarkMode()">
+                    <img src="Site_Photos/sun.png" alt="" class="dark-mode-toggle-sun" id="sun">
+                    <img src="Site_Photos/moon.png" alt="" class="dark-mode-toggle-moon" id="moon">
+                </div>
                 <div class="resume-titles">
                     <div class="resume-name">Andy Brocklesby</div>
                     <div class="resume-title">Front-End Developer</div>
@@ -177,6 +181,41 @@
 
     function goToCode() {
         window.location.href = 'https://github.com/AndyWilliam96/Portfolio';
+    }
+
+    function loadResume() {
+        localStorage.setItem('isDark', 'True');
+    }
+
+
+    function toggleDarkMode() {
+        let theSun = document.getElementById('sun');
+        let theMoon = document.getElementById('moon');
+        let darkStorage = localStorage.getItem('isDark');
+        let resumeLinks = document.getElementsByClassName('resume-link');
+
+        if (darkStorage === 'True') {
+            localStorage.setItem('isDark', 'False');
+            theSun.style.transform = 'translateY(50px)';
+            theMoon.style.transform = 'translateY(-55px)';
+            document.getElementsByClassName('resume-body')[0].style.backgroundColor = '#232e3d';
+            document.getElementsByClassName('resume-body')[0].style.color = 'white';
+            document.getElementsByClassName('resume-container')[0].style.backgroundColor = '#2f3d52';
+            for (let i = 0; i < resumeLinks.length; i++) {
+                resumeLinks[i].style.color = 'white';
+            }
+        }
+        else {
+            localStorage.setItem('isDark', 'True');
+            theSun.style.transform = 'translateY(0px)';
+            theMoon.style.transform = 'translateY(50px)';
+            document.getElementsByClassName('resume-body')[0].style.backgroundColor = 'rgb(51, 54, 87)';
+            document.getElementsByClassName('resume-body')[0].style.color = 'black';
+            document.getElementsByClassName('resume-container')[0].style.backgroundColor = 'white';
+            for (let i = 0; i < resumeLinks.length; i++) {
+                resumeLinks[i].style.color = 'black';
+            }
+        }
     }
 
 </script>
