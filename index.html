@@ -276,14 +276,17 @@
             localStorage.setItem('isDark', 'False');
             theSun.style.transform = 'translateY(50px)';
             theMoon.style.transform = 'translateY(-55px)';
-            pageBody.style.backgroundColor = 'rgb(44, 46, 79)';
+            pageBody.style.backgroundColor = '#232e3d';
             pageBody.style.color = 'white';
             for (let i = 0; i < navLinks.length; i++) {
                 navLinks[i].style.color = 'white';
             }
             document.getElementsByClassName('hero-title')[0].style.color = 'orange';
             document.getElementsByClassName('why-title')[0].style.color = 'orange';
-            document.getElementsByClassName('why')[0].style.backgroundColor = '#002357';
+            document.getElementsByClassName('why')[0].style.backgroundColor = '#2f3d52';
+            document.getElementsByClassName('about-index')[0].style.backgroundColor = '#232e3d';
+            document.getElementsByClassName('skills')[0].style.backgroundColor = '#2f3d52';
+            document.getElementsByClassName('footer')[0].style.backgroundColor = 'rgb(81, 96, 81)';
         }
         else {
             localStorage.setItem('isDark', 'True');
@@ -296,6 +299,9 @@
             }
             document.getElementsByClassName('hero-title')[0].style.color = 'rgb(81, 96, 81)';
             document.getElementsByClassName('why')[0].style.backgroundColor = 'rgb(255, 248, 236)';
+            document.getElementsByClassName('about-index')[0].style.backgroundColor = 'white';
+            document.getElementsByClassName('skills')[0].style.backgroundColor = 'rgb(255, 248, 236)';
+            document.getElementsByClassName('footer')[0].style.backgroundColor = 'rgb(255, 110, 110)';
         }
     }
 
