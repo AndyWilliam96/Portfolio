@@ -39,9 +39,10 @@ body {
 
 header {
     width: 95%;
-    height: 14vh;
+    height: fit-content;
     margin: auto;
     max-width: 1500px;
+    padding: 50px 0;
 }
 
 .header-container {
@@ -91,8 +92,8 @@ header {
 }
 
 .nav-logo {
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 130px;
     cursor: pointer;
     margin-right: 100px;
     z-index: 1;
@@ -500,7 +501,7 @@ header {
 
 .footer-logo {
     width: 200px;
-    height: 200px;
+    height: 180px;
 }
 
 .footer-right {
