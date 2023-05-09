@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hugo.css">
+    <link href="https://fonts.cdnfonts.com/css/futura-md-bt" rel="stylesheet">
+    <link rel="shortcut icon" href="http://hugosfayetteville.com/wp-content/uploads/2020/01/hugos-logo-3.jpg"
+        type="image/x-icon">
+    <title>Hugo's Restaurant | Home</title>
+</head>
+
+<!-----------------------------DEVELOPED BY ANDY BROCKLESBY UofA STUDENT------------------->
+
+<body onload="setupPage()">
+    <!-----------------------NAVBAR---------------------->
+    <div class="navbar-wrapper">
+        <div class="navbar">
+            <div class="navbar-left">
+                <img src="Hugo_Photos/hugosLogo.jpeg" alt="" onclick="goHome()">
+            </div>
+            <div class="navbar-middle">
+                <div class="navbar-item move-page"><a href="#about">about</a></div>
+                <div class="navbar-item move-page"><a href="#menu"> menu</a></div>
+                <div class="navbar-item move-page">news</div>
+            </div>
+            <div class="navbar-right">
+                <div class="navbar-item">
+                    <img onclick="loadFacebook()" src="Hugo_Photos/facebookLogo.png" alt="">
+                </div>
+                <div class="navbar-item">
+                    <img onclick="loadInstagram()" src="Hugo_Photos/instagramLogo.png" alt="">
+                </div>
+                <div class="navbar-item">
+                    <img onclick="loadTripAdvisor()" src="Hugo_Photos/tripadvisorLogo.png" alt="">
+                </div>
+                <div class="navbar-item">
+                    <img onclick="loadYelp()" src="Hugo_Photos/yelpLogo.png" alt="">
+                </div>
+                <div class="navbar-item">
+                    <img onclick="loadUntappd()" src="Hugo_Photos/untappedLogo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------BANNER------------------------->
+    <div class="banner">
+        <div></div>
+    </div>
+    <div class="landing">
+        <img src="Hugo_Photos/hugoStairs.jpeg" alt="">
+    </div>
+    <!----------------------------ABOUT-------------------------->
+    <div class="about-wrapper">
+        <div class="about">
+            <div class="about-left" id="about">
+                <div class="title">About Hugo's</div>
+                <div class="para">A Fayetteville favorite, Hugo’s has been in business since 1977. Located in the
+                    basement at 25 1/2 N Block Ave off the Historic Fayetteville Square, our menu remains true to its
+                    roots. We offer <span>burgers</span> and an eclectic array of <span>appetizers</span>,
+                    <span>entrees</span>, and <span>desserts</span> including our
+                    well-known <span>homemade french fries</span>, <span>beer cheese soup</span>, and <span>grasshopper
+                        crepes</span>. We also have a full bar
+                    with rotating seasonal and <span>craft beer draughts</span>, a tap dedicated to local brews and an
+                    enviable
+                    <span>whiskey</span>, <span>scotch & bourbon</span> collection.
+                </div>
+                <div class="hours">
+                    <table>
+                        <tr>
+                            <th>Hours</th>
+                        </tr>
+                        <tr>
+                            <td>Monday - Saturday<br>
+                                11:00 a.m. - 10:00 p.m.</td>
+                        </tr>
+                        <tr>
+                            <td>CLOSED ON SUNDAYS</td>
+                        </tr>
+                    </table>
+                    <div class="disclaimer">Regular Hours Dine-In & Curbside</div>
+                </div>
+            </div>
+            <div class="about-right">
+                <img id="image1" src="Hugo_Photos/hugosOutside.jpeg" alt="">
+                <img id="image2" src="Hugo_Photos/navBanner.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+    <!----------------------------CONTACT CARDS------------------->
+    <div class="contact-wrapper">
+        <div class="contact">
+            <div class="card">
+                <div>
+                    <div class="title">Contact</div>
+                    <div onclick="callHugos()" class="phone">
+                        <img src="Hugo_Photos/phoneIcon.png" alt="phone image">
+                        <div>(479) 521-7585</div>
+                    </div>
+                    <div onclick="getDirections()" class="address">
+                        <img src="Hugo_Photos/locationIcon.png" alt="address image">
+                        <div>25 1/2 N. Block Ave., Fayetteville, AR</div>
+                    </div>
+                    <div class="disclaimer">Gift Cards and T-Shirts Available</div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="card-title">A Message to our Customers</div>
+                    <div>Delivery is available through</div>
+                    <div onclick="deliveryLink()" class="delivery"> C.lunk’s H.ungry E.xpress W.agon</div>
+                    <div onclick="deliveryCall()" class="phone">
+                        <img src="Hugo_Photos/phoneIcon.png" alt="phone image">
+                        <div>(479)-283-7655 </div>
+                    </div>
+                    <div class="disclaimer">Thank you for your continued support and patronage. </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------SLIDESHOW------------------------>
+    <div class="slideshow-wrapper">
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img class="slideshow-image" src="Hugo_Photos/slideshow_1.jpg">
+                </div>
+                <div class="slide">
+                    <img class="slideshow-image" src="Hugo_Photos/slideshow_2.jpg">
+                </div>
+                <div class="slide">
+                    <img class="slideshow-image" src="Hugo_Photos/slideshow_3.jpg">
+                </div>
+                <div class="slide">
+                    <img class="slideshow-image" src="Hugo_Photos/slideshow_4.jpg">
+                </div>
+                <div class="slide">
+                    <img class="slideshow-image" src="Hugo_Photos/slideshow_5.jpg">
+                </div>
+                <div class="slide">
+                    <img class="slideshow-image" src="Hugo_Photos/slideshow_6.jpg">
+                </div>
+                <div class="slide">
+                    <img class="slideshow-image" src="Hugo_Photos/slideshow_7.jpg">
+                </div>
+                <div class="slide">
+                    <img class="slideshow-image" src="Hugo_Photos/slideshow_8.jpg">
+                </div>
+
+                <!------------------------------REPEAT------------------------->
+                <div class="slide">
+                    <img class="slideshow-image" src="Hugo_Photos/slideshow_1.jpg">
+                </div>
+                <div class="slide">
+                    <img class="slideshow-image" src="Hugo_Photos/slideshow_2.jpg">
+                </div>
+                <div class="slide">
+                    <img class="slideshow-image" src="Hugo_Photos/slideshow_3.jpg">
+                </div>
+                <div class="slide">
+                    <img class="slideshow-image" src="Hugo_Photos/slideshow_4.jpg">
+                </div>
+                <div class="slide">
+                    <img class="slideshow-image" src="Hugo_Photos/slideshow_5.jpg">
+                </div>
+                <div class="slide">
+                    <img class="slideshow-image" src="Hugo_Photos/slideshow_6.jpg">
+                </div>
+                <div class="slide">
+                    <img class="slideshow-image" src="Hugo_Photos/slideshow_7.jpg">
+                </div>
+                <div class="slide">
+                    <img class="slideshow-image" src="Hugo_Photos/slideshow_8.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------MENU SECTION--------------------->
+
+    <div class="menu-wrapper">
+        <div class="menu-bg">
+            <div class="menu-content" id="menu">
+                <!------------------------------------------FIRST COLUMN---------------------------->
+                <div class="appetizers menu-column">
+                    <div class="menu-title">Appetizers</div>
+                    <div class="menu-item">
+                        Nachos<br>
+                        (Cheddar cheese & jalapeños)
+                        <div class="price">
+                            $8.45
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        Macho Nacho<br>
+                        (Cheddar cheese, jalapeños, refried beans, salsa, sour cream, guacamole & diced tomatoes)
+                        <div class="price">
+                            $12.25
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        Veggie Nachos<br>
+                        (Cheddar cheese, jalapeños, tomatoes, green peppers & onions)
+                        <div class="price">
+                            $9.65
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        Chips & Guacamole
+                        <div class="price">
+                            $8.25
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        Chips & Salsa
+                        <div class="price">
+                            $6.25
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        Homemade French Fries
+                        <div class="price">
+                            $5.95
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        Chicken Fingers<br>
+                        (With sweet & sour)
+                        <div class="price">
+                            $9.25
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        Deep-Fried Potato Skins<br>
+                        (5 skins served with your choice of ranch or sour cream with cheddar cheese & crisp bacon)
+                        <div class="price">
+                            $9.85
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        Spinach & Artichoke Dip
+                        <div class="price">
+                            $11.85
+                        </div>
+                    </div>
+                    <div class="menu-title">Cheese Board</div>
+                    <div class="menu-item">
+                        Choice of Three: Drunken Goat, Bleu, Gouda, Swiss, Port Wine Cheddar, Mozzarella, Hot Pepper,
+                        Smoked Cheddar, Brie, Gruyere, Irish Whiskey
+                    </div>
+                    <div class="menu-item">
+                        Cheddar<br>
+                        Served with French Bread & Fruit<br>
+                        <br>
+                        Add spicy salami $4.95
+                        <div class="price">
+                            $22.25
+                        </div>
+                    </div>
+                    <div class="menu-title">Salads</div>
+                    <div class="menu-item">
+                        (With choice of homemade dressings: thousand island, bleu cheese vinaigrette, poppy seed, tangy
+                        house vinaigrette, or ranch style)
+                    </div>
+                    <div class="menu-item">
+                        House Salad
+                        <div class="price">
+                            $4.95
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        Special Chef’s Salad<br>
+                        (Avocado, bacon, cucumber, onion, sprouts, mushrooms, tomato & parmesan cheese)
+                        <div class="price">
+                            $10.95
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        Old-Fashioned Chef’s Salad
+                        (Ham, smoked turkey, boiled egg, tomato & cheddar cheese)
+                        <div class="price">
+                            $10.95
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        Mandarin Orange/ Red Onion Salad<br>
+                        (With poppy seed dressing)
+                        <div class="price">
+                            $5.50
+                        </div>
+                    </div>
+                    <div class="menu-title">Beverages</div>
+                    <div class="menu-item">
+                        Tea
+                        <div class="price">$2.95</div>
+                    </div>
+                    <div class="menu-item">
+                        Juices
+                        <div class="price">$4.95</div>
+                    </div>
+                    <div class="menu-item">
+                        Milk
+                        <div class="price">$4.35</div>
+                    </div>
+                    <div class="menu-item">
+                        Soda
+                        <div class="price">$3.25</div>
+                    </div>
+                    <div class="menu-item">
+                        Coffee
+                        <div class="price">$3.00</div>
+                    </div>
+                    <div class="menu-item">
+                        Hot Chocolate
+                        <div class="price">$6.25</div>
+                    </div>
+                    <div class="menu-disclaimer">
+                        *Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk
+                        of foodborne illness.
+                    </div>
+                    <div class="menu-image">
+                        <img src="Hugo_Photos/menuImage.jpg" alt="">
+                    </div>
+                </div>
+                <!---------------------------------------SECOND COLUMN------------------------->
+                <div class="from-the-grill menu-column">
+                    <div class="menu-title">From the Grill</div>
+                    <div class="menu-item">
+                        Grilled Trout With Dill Tartar<br>
+                        (Served with a house salad & homemade french fries)
+                        <div class="price">
+                            $19.00
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        Marinated Grilled Tuna*<br>
+                        (Served with herbed rice & house salad)
+                        <div class="price">$20.00</div>
+                    </div>
+                    <div class="menu-item">
+                        Marinated Chicken Breast<br>
+                        (Grilled, served with rice & mandarin orange/red onion salad)
+                        <div class="price">$13.50</div>
+                    </div>
+                    <div class="menu-item">
+                        Chopped Sirloin*<br>
+                        (Charbroiled, served with homemade french fries & house salad)
+                        <div class="price">$13.50</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="richards">
+                            <img src="http://hugosfayetteville.com/wp-content/uploads/2020/01/richards-logo-2.jpg"
+                                alt="">
+                            8 oz Filet*<br>
+                            (Bacon-wrapped, charbroiled, served with homemade french fries and house salad)
+                        </div>
+                        <div class="price">$32.95</div>
+                    </div>
+                    <div class="menu-title">Specialties</div>
+                    <div class="menu-item">
+                        Quiche Lorraine
+                        <div class="price">$8.25</div>
+                    </div>
+                    <div class="menu-item">
+                        Ham & Broccoli Quiche
+                        <div class="price">$8.25</div>
+                    </div>
+                    <div class="menu-item">
+                        Chicken or Tuna Salad
+                        <div class="price">$8.50</div>
+                    </div>
+                    <div class="menu-item">
+                        Chicken or Tuna Salad<br>
+                        (On lettuce with cottage cheese & tomato)
+                        <div class="price">$8.50</div>
+                    </div>
+                    <div class="menu-item">
+                        Broccoli & Cheddar Cheese Crepes
+                        <div class="price">$8.75</div>
+                    </div>
+                    <div class="menu-item">
+                        Spinach & Gruyere Cheese Crepes
+                        <div class="price">$8.75</div>
+                    </div>
+                    <div class="menu-item">
+                        Crepes Cannelloni<br>
+                        (With Italian marinara sauce & parmesan cheese)
+                        <div class="price">$8.75</div>
+                    </div>
+                    <div class="menu-item">
+                        Mexican Burrito Crepes<br>
+                        (With beans, cheese, diced tomatoes, lettuce & salsa)
+                        <div class="price">$8.75</div>
+                    </div>
+                    <div class="menu-item">
+                        Fresh Mushroom Crepes<br>(With sour cream & green onions)
+                        <div class="price">$8.75</div>
+                    </div>
+                    <div class="menu-title">Burgers</div>
+                    <div class="menu-item" style="text-align:center;">
+                        Served With Chips
+                        We use 100% black angus beef.
+                        rare – bloody • med rare – red • med – warm pink med well – slight pink • well – no pink
+                    </div>
+                    <div class="menu-item" style="text-align:center;">
+                        *ALL ONE-THIRD POUND OF CHARBROILED BEEF
+                    </div>
+                    <div class="menu-item">
+                        The Traditional Hamburger<br>
+                        (With lettuce, tomato, pickle, onion, mayonnaise & mustard)
+                        <div class="price">$10.50</div>
+                    </div>
+                    <div class="menu-item">
+                        Cheeseburger<br>
+                        (With lettuce, tomato, pickle, onion, mayonnaise & mustard)
+                        <div class="price">$11.25</div>
+                    </div>
+                    <div class="menu-item">
+                        Bleu Moon Burger<br>
+                        (With melted bleu cheese, lettuce, red onion & mayonnaise)
+                        <div class="price">$11.85</div>
+                    </div>
+                    <div class="menu-item">
+                        Swiss Cheese & Bacon Burger<br>
+                        (With lettuce, red onion & mayonnaise)
+                        <div class="price">$11.85</div>
+                    </div>
+                    <div class="menu-item">
+                        Chili Burger<br>
+                        (With cheddar cheese & mayonnaise)
+                        <div class="price">$12.00</div>
+                    </div>
+                    <div class="menu-item">
+                        Guacamole Burger<br>
+                        (With guacamole, lettuce & mayonnaise)
+                        <div class="price">$12.00</div>
+                    </div>
+                    <div class="menu-item">
+                        Nature’s Burger<br>
+                        (A multigrain patty with lettuce, tomato, pickle, onion, mayonnaise & mustard on kaiser roll)
+                        <div class="price">$10.50</div>
+                    </div>
+                    <div class="menu-item">
+                        Smoky Cheddar Burger<br>
+                        (With lettuce, tomato, pickle, onion, mayonnaise & mustard)
+                        <div class="price">$11.85</div>
+                    </div>
+                    <div class="menu-item">
+                        Jalapeño Cheeseburger<br>
+                        (With pepperjack cheese, jalapeños, lettuce, tomato, onion, mayonnaise & mustard)
+                        <div class="price">$11.85</div>
+                    </div>
+                </div>
+                <!----------------------------------THIRD COLUMN---------------------------->
+                <div class="sandwiches menu-column">
+                    <div class="menu-title">Sandwiches</div>
+                    <div class="menu-item">
+                        *Served with Chips & Pickle
+                    </div>
+                    <div class="menu-item">
+                        Reuben<br>
+                        (Corned beef with swiss cheese, sauerkraut & 1000 island on rye)
+                        <div class="price">$10.50</div>
+                    </div>
+                    <div class="menu-item">
+                        Tuna Melt<br>
+                        (Tuna salad with mayo, lettuce, tomato & swiss cheese on rye)
+                        <div class="price">$9.50</div>
+                    </div>
+                    <div class="menu-item">
+                        Hot Pastrami & Cheese<br>
+                        (With mustard & swiss cheese on kaiser roll)
+                        <div class="price">$9.75</div>
+                    </div>
+                    <div class="menu-item">
+                        Grilled Ham & Cheese<br>
+                        (With mayo & swiss cheese on onion roll)
+                        <div class="price">$9.00</div>
+                    </div>
+                    <div class="menu-item">
+                        Bacon, Lettuce & Tomato<br>
+                        (With mayo on whole wheat)
+                        <div class="price">$9.00</div>
+                    </div>
+                    <div class="menu-item">
+                        Veggie Reuben<br>
+                        (With mustard, mushrooms, swiss cheese, tomatoes, sprouts, sauerkraut & onion on wheat)
+                        <div class="price">$9.50</div>
+                    </div>
+                    <div class="menu-item">
+                        Avocado Sandwich<br>
+                        (With mayo, swiss cheese & sprouts on wheat)
+                        <div class="price">$10.50</div>
+                    </div>
+                    <div class="menu-item">
+                        Sirloin Steak Sandwich<br>
+                        (With grilled onions & peppers, pepper jack cheese & lime cilantro aïoli)
+                        <div class="price">$11.50</div>
+                    </div>
+                    <div class="menu-item">
+                        Cheddar/Swiss/Tomato/Sprouts<br>
+                        (With mayo on grilled onion roll) plus avocado add $1.25
+                        <div class="price">$10.15</div>
+                    </div>
+                    <div class="menu-item">
+                        Chicken Salad Sandwich<br>
+                        (With mayo, tomato & lettuce on whole wheat)
+                        <div class="price">$9.50</div>
+                    </div>
+                    <div class="menu-item">
+                        Turkey/Swiss Cheese<br>
+                        (With mayo, tomato, & lettuce on whole wheat)
+                        <div class="price">$9.75</div>
+                    </div>
+                    <div class="menu-item">
+                        Turkey Club Sandwich<br>
+                        (With mayo, bacon, tomato & lettuce on whole wheat)
+                        <div class="price">$11.00</div>
+                    </div>
+                    <div class="menu-item">
+                        Derek’s Special<br>
+                        (Marinated chicken breast with swiss cheese, bacon, tomato, lettuce & honey mustard dressing on
+                        a kaiser roll)
+                        <div class="price">$12.00</div>
+                    </div>
+                    <div class="menu-item">
+                        Chris’ Chicken “Po’ Boy”<br>
+                        (Marinated chicken breast with mayo, hot sauce, red onion, lettuce & pickles on a wheat hoagie)
+                        <div class="price">$12.00</div>
+                    </div>
+                    <div class="menu-item">
+                        Fried Catfish “Po’ Boy”<br>
+                        (With dill tartar, onion & lettuce on a white hoagie)
+                        <div class="price">$12.00</div>
+                    </div>
+                    <div class="menu-item">
+                        Black & Bleu Chicken Sandwich<br>
+                        (Blackened chicken breast and melted bleu cheese with a lime cilantro aïoli & lettuce on a
+                        kaiser roll)
+                        <div class="price">$12.00</div>
+                    </div>
+                    <div class="menu-title">Desserts</div>
+                    <div class="menu-item">
+                        Vanilla Ice Cream (Haagen-Dazs)<br>
+                        (with Hot Fudge Sauce) $6.50
+                        <div class="price">$5.75</div>
+                    </div>
+                    <div class="menu-item">
+                        Chocolate or Lemon Mousse
+                        <div class="price">$5.75</div>
+                    </div>
+                    <div class="menu-item">
+                        Grasshopper Crepes<br>
+                        (Crepes filled with mint ice cream & covered with homemade hot fudge sauce)
+                        <div class="price">$8.75</div>
+                    </div>
+                    <div class="menu-item">
+                        Hot Peach & Amaretto Crepes<br>
+                        (With vanilla ice cream)
+                        <div class="price">$8.75</div>
+                    </div>
+                    <div class="menu-item">
+                        Apple Pie
+                        <div class="price">$6.00</div>
+                    </div>
+                    <div class="menu-item">
+                        Pecan Pie
+                        <div class="price">$6.00</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="printer">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3022/3022251.png" alt="printer icon">
+                            <a href="http://hugosfayetteville.com/wp-content/uploads/2020/07/PDF-Menu.pdf"
+                                target="_blank">PRINT
+                                MENU</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------HUGO's BAR BANNER----------------------->
+    <div class="space-lrg"></div>
+    <div class="banner">
+        <div></div>
+    </div>
+    <div class="space-lrg">
+        <div></div>
+    </div>
+    <!------------------------------ALCOHOL MENU-------------------------->
+    <div class="alcohol-wrapper">
+        <div class="alcohol">
+            <div class="alcohol-logo">
+                <img src="https://cdn-icons-png.flaticon.com/512/3069/3069352.png" alt="">
+            </div>
+            <div class="title">Hugo's Alcohol</div>
+            <div class="beer-select-buttons">
+                <div class="beer-select-bg">
+                    <div class="beer-select-item" onclick="openBeerSpecialMenu()">Beer Specials</div>
+                    <div class="beer-select-item" onclick="openBeerItemMenu()">Beer Items</div>
+                    <div class="beer-select-item" onclick="openWineListMenu()">Wine Items</div>
+                </div>
+            </div>
+            <!----------------------------------BEER SPECIALS-------------------------------->
+            <div class="beer-specials" id="beer-special-menu">
+                <div class="menu-title">Beer Specials</div>
+                <div class="alcohol-type-banner">
+                    <div class="alcohol-type-title">Tap 7</div>
+                    <div class="alcohol-type-description">Hugo's Tap 7 is our rotating seasonal and craft beer offering.
+                    </div>
+                </div>
+                <div class="alcohol-item">
+                    <img src="https://beer.untappd.com/labels/2921872" alt="">
+                    <div class="alcohol-item-text">
+                        <div class="alcohol-item-title">Hazy & Hoppy (IPA - American)</div>
+                        <div class="alcohol-item-decription">6.7% ABV | 70 IBU | Hawk Moth Brewery & Beer Parlor |
+                            Rogers, AR
+                        </div>
+                        <div class="alcohol-item-description">Our Rotating Citra focused IPA series.</div>
+                    </div>
+                </div>
+                <div class="alcohol-type-banner">
+                    <div class="alcohol-type-title">Can or Bottle Specials</div>
+                    <div class="alcohol-type-description">Hugo's offers a variety of can and bottle specials throughout
+                        the year.
+                    </div>
+                </div>
+                <div class="alcohol-item">
+                    <img src="https://beer.untappd.com/labels/3002824" alt="">
+                    <div class="alcohol-item-text">
+                        <div class="alcohol-item-title">Seasick Crocodile (Sour - Other)</div>
+                        <div class="alcohol-item-description">6.3% ABV | Prairie Artisan Ales | Krebs, OK</div>
+                        <div class="alcohol-item-description">Sour ale with cranberries, ginger, cinnamon & nutmeg.
+                        </div>
+                    </div>
+                </div>
+                <div class="alcohol-item">
+                    <img src="https://beer.untappd.com/labels/5067496" alt="">
+                    <div class="alcohol-item-text">
+                        <div class="alcohol-item-title">
+                            BDCS (2022) (Stout - Imperial / Double Milk)</div>
+                        <div class="alcohol-item-description">10.3% ABV | 69 IBU | Ozark Beer Company | Rogers, AR</div>
+                        <div class="alcohol-item-description">This year's batch was aged in 7-14yr old Kentucky Bourbon
+                            barrels, almost identical to our first couple of years. Aged now nearly 8 months.
+                        </div>
+                    </div>
+                </div>
+                <div class="alcohol-type-banner">
+                    <div class="alcohol-type-title">Tap 8</div>
+                </div>
+                <div class="alcohol-item">
+                    <img src="https://beer.untappd.com/labels/5042757" alt="">
+                    <div class="alcohol-item-text">
+                        <div class="alcohol-item-title">
+                            Bubbles (Farmhouse Ale - Grisette)</div>
+                        <div class="alcohol-item-description">4.7% ABV | Gotahold Brewing | Eureka Springs, AR</div>
+                    </div>
+                </div>
+            </div>
+            <!----------------------------------------BEER LIST------------------------------------->
+            <div class="beer-list" id="beer-list-menu">
+                <div class="menu-title">Beer Items</div>
+                <div class="alcohol-type-banner">
+                    <div class="alcohol-type-title">Local Draught</div>
+                </div>
+                <div class="alcohol-item">
+                    <img src="https://beer.untappd.com/labels/5124023" alt="">
+                    <div class="alcohol-item-text">
+                        <div class="alcohol-item-title">
+                            It’s A Beaut (IPA - American)</div>
+                        <div class="alcohol-item-decription">6.6% ABV | 55 IBU | Ozark Beer Company Rogers, AR
+                        </div>
+                        <div class="alcohol-item-description">Just in time for Fayetteville's Lights of the Ozarks comes
+                            It's A Beaut - Winter IPA. Brewed with current-crop Cascade hops and Amarillo this 6.6% West
+                            Coast inspired IPA was brewed with orange peel and a smidge of cranberry.</div>
+                    </div>
+                </div>
+                <div class="alcohol-item">
+                    <img src="https://beer.untappd.com/labels/504409" alt="">
+                    <div class="alcohol-item-text">
+                        <div class="alcohol-item-title">IPA IPA - American</div>
+                        <div class="alcohol-item-decription">4.2% ABV | 38 IBU | Ozark Beer Company Rogers, AR
+                        </div>
+                        <div class="alcohol-item-description">Notes of Citrus and Tropical Fruit with a crisp and clean
+                            bitterness.</div>
+                        <div class="alcohol-price">
+                            <div class="alcohol-size">16oz Draft</div>
+                            <div class="alcohol-cost">$4.75</div>
+                        </div>
+                        <div class="alcohol-price">
+                            <div class="alcohol-size">Pitcher</div>
+                            <div class="alcohol-cost">$18.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="alcohol-item">
+                    <img src="https://beer.untappd.com/labels/1215298" alt="">
+                    <div class="alcohol-item-text">
+                        <div class="alcohol-item-title">American Pale Ale (Pale Ale - American)</div>
+                        <div class="alcohol-item-decription">4.2% ABV 38 IBU Ozark Beer Company Rogers, AR
+                        </div>
+                        <div class="alcohol-item-description">A light bodied session ale brewed with rye for a dry
+                            finish. Notes of grapefruit and fresh cut grass.</div>
+                        <div class="alcohol-price">
+                            <div class="alcohol-size">16oz Draft</div>
+                            <div class="alcohol-cost">$4.75</div>
+                        </div>
+                        <div class="alcohol-price">
+                            <div class="alcohol-size">Pitcher</div>
+                            <div class="alcohol-cost">$18.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="alcohol-item">
+                    <img src="https://beer.untappd.com/labels/509378" alt="">
+                    <div class="alcohol-item-text">
+                        <div class="alcohol-item-title">La Brea Brown (Brown Ale - Belgian)</div>
+                        <div class="alcohol-item-decription">6% ABV | 18 IBU | Fossil Cove Brewing Co. | Fayetteville,
+                            AR
+                        </div>
+                        <div class="alcohol-item-description">Belgian-style ale brewed with an addition of coriander.
+                            Rich maltiness with notes of chocolate, toast and spice.</div>
+                        <div class="alcohol-price">
+                            <div class="alcohol-size">16oz Draft</div>
+                            <div class="alcohol-cost">$4.75</div>
+                        </div>
+                        <div class="alcohol-price">
+                            <div class="alcohol-size">Pitcher</div>
+                            <div class="alcohol-cost">$18.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="alcohol-type-banner">
+                    <div class="alcohol-type-title">Local Cans</div>
+                </div>
+                <div class="alcohol-item">
+                    <img src="https://beer.untappd.com/labels/2066697" alt="">
+                    <div class="alcohol-item-text">
+                        <div class="alcohol-item-title">Session IPA IPA - Session</div>
+                        <div class="alcohol-item-decription">4.9% ABV | 50 IBU | Fossil Cove Brewing Co. | Fayetteville,
+                            AR
+                        </div>
+                        <div class="alcohol-item-description">Session IPA brewed with Simcoe, Mosaic, Summit and
+                            Amarillo
+                            hops. Crisp and refreshing with a light malt backbone.</div>
+                        <div class="alcohol-price">
+                            <div class="alcohol-size">Can</div>
+                            <div class="alcohol-cost">$4.75</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="alcohol-item">
+                    <img src="https://beer.untappd.com/labels/3976389" alt="">
+                    <div class="alcohol-item-text">
+                        <div class="alcohol-item-title">
+                            Little Red Strawberry Lager (Lager - American)</div>
+                        <div class="alcohol-item-decription">4.9% ABV | 50 IBU | Fossil Cove Brewing Co. | Fayetteville,
+                            AR
+                        </div>
+                        <div class="alcohol-item-description">Session IPA brewed with Simcoe, Mosaic, Summit and
+                            Amarillo
+                            hops. Crisp and refreshing with a light malt backbone.</div>
+                        <div class="alcohol-price">
+                            <div class="alcohol-size">Can</div>
+                            <div class="alcohol-cost">$4.75</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----------------------------------------WINE LIST------------------------------------->
+            <div class="wine-list" id="wine-list-menu">
+                <div class="menu-title">Wine Items</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    //------------------ON LOAD PAGE SETUP--------------------
+    function setupPage() {
+        beerSpecialMenu.style.display = "block";
+        beerItemMenu.style.display = "none";
+        wineListMenu.style.display = "none";
+    }
+
+
+
+
+
+
+
+    //----------------------------SOCIAL MEDIA BUTTONS------------------------
+    function goHome() {
+        window.location.href = 'hugo.html';
+    }
+
+    function loadFacebook() {
+        window.open('https://www.facebook.com/hugosbasement', '_blank');
+    }
+    function loadInstagram() {
+        window.open('https://www.instagram.com/hugosfayetteville/', '_blank');
+    }
+    function loadTripAdvisor() {
+        window.open('https://www.tripadvisor.com/Restaurant_Review-g31589-d643041-Reviews-Hugo_s_Restaurant-Fayetteville_Arkansas.html', '_blank');
+    }
+    function loadYelp() {
+        window.open('https://www.yelp.com/biz/hugos-fayetteville', '_blank');
+    }
+    function loadUntappd() {
+        window.open('https://untappd.com/v/hugos-restaurant/115680?ng_menu_id=1437c92f-cca8-4d99-87f3-40e27d6f9af1', '_blank');
+    }
+
+
+    //-----------------------CONTACT-------------------------
+    function callHugos() {
+        window.open("tel:(479) 521-7585");
+    }
+    function getDirections() {
+        window.open('https://www.google.com/maps/dir//25+1%2F2+N+Block+Ave,+Fayetteville,+AR+72701/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x87c96ed79da5d421:0x63500205dea6a3fb?sa=X&ved=2ahUKEwicjvXyvvfmAhVRCc0KHfNxCkUQwwUwAHoECAsQAw', '_blank');
+    }
+    function deliveryLink() {
+        window.open('https://www.facebook.com/clunks/?eid=ARBh5Mz92Lif04CYPxoO7OAE87kbA3Pki1X_TUHP7qGCBh_TkzUrVg0kXHm1R9CJTzAw2Fw_dR9HkEDh&fref=mentions&__xts__[0]=68.ARAP8u_lhl2KKqWBQk0TDtbJlATIFM3Ay3OsJagiyJWwPLL9zKXT193plkR9oApXWcQExeQ6NmVBvkeQCS3oTkeeLtcle6V8aErxRpUaHIRoSrqxyXMrRxh0nlImLwu83ecKgKDnyvpKQfRB8yZ4BIzuIHMFuoYQxX280w1opB0Nria-udPA2AdLQArK_FXFnh940CTviueU5beJpI5hCD2PMU3wUeS_CMigxIPD25BeyT7J8a2Tm63DUFM_OYG_mG2TPXUKXujzN8iMw1SbU4dDfc_Y7c5ss3tHycM_y6jxYhUHa2WTO3O0LC_C22xxKhthjaTtEgdubvV6aoHZ_B2NpA', '_blank');
+    }
+    function deliveryCall() {
+        window.open('tel:(479)-283-7655');
+    }
+
+    //----------------------ALCOHOL MENUS---------------------
+    let beerSpecialMenu = document.getElementById("beer-special-menu");
+    let beerItemMenu = document.getElementById("beer-list-menu");
+    let wineListMenu = document.getElementById("wine-list-menu");
+
+    function openBeerSpecialMenu() {
+        if (beerSpecialMenu.style.display == "none") {
+            beerSpecialMenu.style.display = "block";
+            beerItemMenu.style.display = "none";
+            wineListMenu.style.display = "none";
+        }
+    }
+
+    function openBeerItemMenu() {
+        if (beerItemMenu.style.display == "none") {
+            beerItemMenu.style.display = "block";
+            beerSpecialMenu.style.display = "none";
+            wineListMenu.style.display = "none";
+        }
+    }
+
+    function openWineListMenu() {
+        if (wineListMenu.style.display == "none") {
+            wineListMenu.style.display = "block";
+            beerSpecialMenu.style.display = "none";
+            beerItemMenu.style.display = "none";
+        }
+    }
+
+</script>
+
+</html>
+
+<!-----------------------------DEVELOPED BY ANDY BROCKLESBY UofA STUDENT------------------->

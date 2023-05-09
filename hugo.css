@@ -1,0 +1,725 @@
+@import url('https://fonts.cdnfonts.com/css/futura-md-bt');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Futura Lt BT', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar-wrapper {
+    padding: 30px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.navbar-left img {
+    width: 150px;
+    cursor: pointer;
+}
+
+.navbar-item img {
+    width: 28px;
+}
+
+.navbar-left,
+.navbar-middle,
+.navbar-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar-middle {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.navbar-item {
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.navbar-item:hover {
+    filter: invert(22%) sepia(89%) saturate(7404%) hue-rotate(343deg) brightness(116%) contrast(109%);
+    transform: scale(1.2);
+}
+
+.move-page a {
+    text-decoration: none;
+    color: black;
+}
+
+/*------------------------BANNER------------------------*/
+
+.banner {
+    width: 100%;
+    height: 45px;
+    background-image: url(Hugo_Photos/navBanner.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: saturate(150%);
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.landing-wrapper {
+    width: 100%;
+}
+
+.landing {
+    width: 100%;
+}
+
+.landing img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid black;
+    filter: saturate(300%);
+}
+
+.banner2 {
+    width: 100%;
+    height: 45px;
+    background-image: url('http://static1.squarespace.com/static/594abe50579fb34270cef722/594abfede48aee8cdbeb5a5e/594abfefe48aee8cdbeb5ee0/1498071023659/NWA11-13-25-Edit.jpg?format=original');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: saturate(150%);
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+/*-------------------------ABOUT-------------------------*/
+
+.about-wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.about-left {
+    width: 50%;
+}
+
+.about-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-right img {
+    width: 100%;
+    border-radius: 15px;
+    transition: .5s ease-in-out;
+}
+
+.about-right img:hover {
+    filter: sepia(30%);
+}
+
+#image2 {
+    display: none;
+}
+
+.title,
+th {
+    font-family: 'Futura Hv BT', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.para {
+    font-family: 'Futura Lt BT', sans-serif;
+    font-size: 18px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.para span {
+    color: #fc034e;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+table {
+    border: 1px solid #fc034e;
+    width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+tr,
+th,
+td {
+    padding: 10px;
+    border: 1px solid black;
+    font-family: 'Futura Md BT', sans-serif;
+    text-align: center;
+}
+
+.disclaimer {
+    font-family: 'Futura Lt BT', sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+
+/*-----------------------------CONTACT CARDS-----------------------*/
+.contact-wrapper {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    width: 400px;
+    height: 250px;
+    border-radius: 15px;
+    box-shadow: 1px 10px 56px -15px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 10px 56px -15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 10px 56px -15px rgba(0, 0, 0, 0.75);
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.phone:hover {
+    transform: scale(1.1);
+    filter: invert(22%) sepia(89%) saturate(7404%) hue-rotate(343deg) brightness(116%) contrast(109%);
+    transform: scale(1.1);
+}
+
+.phone img {
+    width: 28px;
+    margin-right: 20px;
+}
+
+.address {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.address:hover {
+    transform: scale(1.1);
+    filter: invert(22%) sepia(89%) saturate(7404%) hue-rotate(343deg) brightness(116%) contrast(109%);
+    transform: scale(1.1);
+}
+
+.address img {
+    width: 40px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-family: 'Futura Hv BT', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.delivery {
+    font-size: 20px;
+    font-family: 'Futura Hv BT', sans-serif;
+    font-style: italic;
+    margin: 20px 0;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.delivery:hover {
+    transform: scale(1.1);
+    filter: invert(22%) sepia(89%) saturate(7404%) hue-rotate(343deg) brightness(116%) contrast(109%);
+    transform: scale(1.1);
+}
+
+/*------------------------SLIDESHOW------------------*/
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(0);
+    }
+
+
+    100% {
+        transform: translateX(calc(-250px * 9));
+    }
+}
+
+.slideshow-wrapper {
+    margin: 75px 0;
+}
+
+.slider {
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(250px * 18);
+}
+
+.slide {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+    animation: slide-left 30s linear infinite;
+}
+
+.slideshow-image {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    transition: .2s ease-in-out;
+    border-radius: 10px;
+}
+
+.slideshow-image:hover {
+    transform: translateZ(10px);
+}
+
+/*------------------------MENU-----------------------*/
+
+.menu-wrapper {
+    width: 100%;
+}
+
+.menu-bg {
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    border-radius: 30px;
+    background-image: url(Hugo_Photos/menuBG.jpeg);
+    background-size: 100px;
+    filter: sepia(20%);
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 50px 0;
+}
+
+.menu-column {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border-radius: 20px;
+    padding: 10px 0;
+}
+
+.menu-title {
+    text-align: center;
+    font-size: 30px;
+    color: #fc034e;
+    text-decoration: underline;
+    text-decoration-color: black;
+    font-weight: bold;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+.menu-item {
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 10px 0;
+}
+
+.price {
+    font-family: 'Futura Hv BT', sans-serif;
+    color: #bf0039;
+}
+
+.menu-disclaimer {
+    font-size: 12px;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+.richards {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.richards img {
+    width: 120px;
+    margin-left: -5px;
+}
+
+.menu-image {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.menu-image img {
+    width: 100%;
+    border-radius: 15px;
+    border: 5px solid #fc034e;
+}
+
+.printer {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px dashed black;
+
+}
+
+.printer a {
+    color: white;
+    text-decoration: dashed;
+    transition: .2s ease-in-out;
+    background-color: #fc034e;
+    border-radius: 8px;
+    padding: 5px 15px;
+}
+
+.printer a:hover {
+    transform: scale(1.1);
+    background-color: #bf0039;
+}
+
+.printer img {
+    width: 20px;
+}
+
+/*-------------------------BANNER2----------------------*/
+
+.space-lrg {
+    padding: 50px 0;
+}
+
+/*----------------------ALCOHOL-------------------------*/
+
+.alcohol-wrapper {
+    width: 80%;
+    height: 200vh;
+    margin: auto;
+}
+
+.alcohol {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.alcohol-logo {
+    width: 150px
+}
+
+.alcohol-logo img {
+    width: 100%;
+}
+
+.beer-select-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.beer-select-item {
+    font-size: 20px;
+    padding: 0px 15px;
+    width: max-content;
+    color: white;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.beer-select-item:hover {
+    transform: scale(1.2);
+}
+
+.beer-select-bg {
+    width: 100%;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fc034e;
+}
+
+.beer-specials {
+    width: 80%;
+}
+
+.beer-list {
+    width: 80%;
+}
+
+.alcohol-item {
+    border: 1px dashed black;
+    padding: 10px;
+    margin: 50px 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 50px;
+    transition: .3s ease-in-out;
+}
+
+.alcohol-item:hover {
+    transform: scale(1.5);
+}
+
+.alcohol-type-banner {
+    background-color: #fc034e;
+    padding: 10px;
+    color: white;
+}
+
+.alcohol-type-title {
+    font-family: 'Futura Hv BT', sans-serif;
+    font-size: 25px;
+}
+
+.alcohol-item-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.alcohol-item img {
+    border: 1px solid #fc034e;
+}
+
+.alcohol-item-title {
+    font-family: 'Futura Hv BT', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.alcohol-item-description {
+    font-size: 16px;
+}
+
+.alcohol-price {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #bf0039;
+    margin: 10px 0;
+}
+
+.alcohol-size {
+    font-family: 'Futura Hv BT', sans-serif;
+    font-size: 20px;
+}
+
+.alcohol-cost {
+    font-family: 'Futura Hv BT', sans-serif;
+    color: #fc034e;
+    font-size: 25px;
+}
+
+@media (max-width:1150px) {
+
+    .navbar-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .about-wrapper {
+        width: 90%;
+        margin-top: -75px;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-left {
+        width: 100%;
+        border: 1px solid black;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    .about-right {
+        width: 100%;
+    }
+
+    .about-right img {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .contact-wrapper {
+        width: 100%;
+    }
+
+    .contact {
+        width: 100%;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .card {
+        width: 80%;
+        height: 300px;
+    }
+
+    .menu-bg {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .menu-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .menu-column {
+        width: 80%;
+        margin: auto;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+
+    .menu-item {
+        border-bottom: 1px dashed rgba(0, 0, 0, 0.233);
+    }
+
+    .menu-image {
+        width: 50%;
+    }
+
+    .menu-image img {
+        aspect-ratio: 2/1;
+        object-fit: cover;
+    }
+
+    .alcohol-wrapper {
+        width: 100%;
+    }
+
+    .beer-select-item {
+        font-size: medium;
+    }
+
+    .beer-specials {
+        width: 100%;
+    }
+
+    .alcohol-item {
+        width: 100%;
+    }
+
+    .beer-list {
+        width: 100%;
+    }
+
+    .wine-list {
+        width: 100%;
+    }
+
+    .alcohol-item:hover {
+        transform: scale(1);
+    }
+}
+
+@media (max-width:1850px) {
+    .alcohol-price {
+        width: 900px;
+    }
+}
+
+@media (max-width:1700px) {
+    .alcohol-price {
+        width: 800px;
+    }
+}
+
+@media (max-width:1550px) {
+    .alcohol-price {
+        width: 700px;
+    }
+}
+
+@media (max-width:1500px) {
+    .alcohol-price {
+        width: 100%;
+    }
+}

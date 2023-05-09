@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andy Brocklesby | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="portfolio-body" onload="setupUser()">
+    <!----------------------TEST IN PROGRESS BAR----------------->
+    <div class="wip-bar">
+        <div class="wip-bar-content">🤖 Website Under Development. This is not a complete product. Sorry if a few things
+            don't look right! 🤖</div>
+    </div>
+
+    <!-------------------------------HEADER
+    Consists of:
+    - Navigation links
+    - Logo
+    - Contact button
+    -------------------------->
+    <header>
+        <div class="header-container">
+            <div class="nav-items">
+                <a href="index.html" id="nav-link" class="nav-link">Home</a>
+                <a href="#" id=nav-link class="nav-link">About</a>
+                <a href="portfolio.html" id="nav-link" class="nav-link">Portfolio</a>
+                <div class="dark-mode-toggle-container" onclick="toggleDarkMode()">
+                    <img src="Site_Photos/sun.png" alt="" class="dark-mode-toggle-sun" id="sun">
+                    <img src="Site_Photos/moon.png" alt="" class="dark-mode-toggle-moon" id="moon">
+                </div>
+            </div>
+            <img src="Site_Photos/AndyWilliam-logo.png" alt="Andy's portfolio logo" class="nav-logo"
+                onclick="goToHome()">
+            <div class="nav-resume-btn" onclick="goToResume()">Resume</div>
+        </div>
+
+        <div class="header-mobile">
+            <div class="header-mobile-container">
+                <div class="header-mobile-content">
+                    <img src="Site_Photos/AndyWilliam-logo.png" alt="Andy's portfolio logo" class="nav-logo"
+                        onclick="goToHome()">
+                    <div class="nav-items">
+                        <a href="#" id="nav-link" class="nav-link">Home</a>
+                        <a href="#" id=nav-link class="nav-link">About</a>
+                        <a href="#" id="nav-link" class="nav-link">Portfolio</a>
+                        <div class="dark-mode-toggle-container" onclick="toggleDarkMode()">
+                            <img src="Site_Photos/sun.png" alt="" class="dark-mode-toggle-sun" id="sun">
+                            <img src="Site_Photos/moon.png" alt="" class="dark-mode-toggle-moon" id="moon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="portfolio">
+        <div class="portfolio-container">
+            <div class="portfolio-content">
+                <div class="portfolio-row1">
+                    <div class="portfolio-card">
+                        <div class="portfolio-text-bg">
+                            <div class="portfolio-text-title">Hugo's Resturaunt</div>
+                            <div class="portfolio-text-content">
+                                Redesigning Hugos Website from the ground up with modern design and techniques.
+                            </div>
+                            <div class="portfolio-programs">
+                                <div class="portfolio-html">HTML</div>
+                                <div class="portfolio-css">CSS</div>
+                                <div class="portfolio-javascript">JavaScript</div>
+                                <a href="hugo.html" target="_blank" class="portfolio-demo">Live Demo</a>
+                                <a href="#" class="portfolio-code-btn">&lt; See Code &gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-row-1">
+                    <div class="footer-left">
+                        <img src="Site_Photos/AndyWilliam-logo.png" alt="" class="footer-logo">
+                        <img src="Site_Photos/LinkedIn_Logo.png" alt="" class="social-icon" onclick="goToLinkedin()">
+                    </div>
+                    <div class="footer-right">
+                        <div class="footer-title">Let's Work Together! 🤝</div>
+                        <form action="https://formspree.io/f/xayzvjeg" method="POST" class="footer-form"
+                            target="_blank">
+
+                            <input type="text" name="full-name" placeholder="Full Name"
+                                class="footer-input footer-input-sml" required>
+
+                            <input type="email" name="email" placeholder="Email" class="footer-input footer-input-sml"
+                                required>
+
+                            <textarea name="message" class="footer-input footer-message"
+                                placeholder="Your Message Here:" rows="7" maxlength="500" required></textarea>
+
+                            <!-- your other form fields go here -->
+                            <button type="submit" class="form-btn">Send</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-row-2">
+                    <div class="footer-copyright">&#169;2023 Andy Brocklesby</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+
+<script>
+
+    function setupUser() {
+        if (localStorage.getItem('isDark') === null) {
+            localStorage.setItem('isDark', 'True');
+        }
+        else {
+            localStorage.setItem('isDark', 'True');
+        }
+    }
+
+    function goToHome() {
+        window.location.href = 'index.html';
+    }
+
+    function goToResume() {
+        window.location.href = 'resume.html';
+    }
+
+    function goToLinkedin() {
+        window.location.href = 'https://www.linkedin.com/in/andrewbrocklesby/';
+    }
+
+    function goToHugos() {
+        window.open('hugo.html', '_blank');
+    }
+
+    function toggleDarkMode() {
+        let theSun = document.getElementById('sun');
+        let theMoon = document.getElementById('moon');
+        let darkStorage = localStorage.getItem('isDark');
+        let pageBody = document.getElementById('body');
+        let navLinks = document.getElementsByClassName('nav-link');
+
+
+
+
+        if (darkStorage === 'True') {
+            localStorage.setItem('isDark', 'False');
+            theSun.style.transform = 'translateY(50px)';
+            theMoon.style.transform = 'translateY(-55px)';
+            for (let i = 0; i < navLinks.length; i++) {
+                navLinks[i].style.color = 'white';
+            }
+            document.getElementById('portfolio-body').style.backgroundColor = '#232e3d';
+            document.getElementsByClassName('nav-logo')[0].style.filter = 'invert(1)';
+            document.getElementsByClassName('footer-logo')[0].style.filter = 'invert(1)';
+            document.getElementsByClassName('footer')[0].style.backgroundColor = 'rgb(81, 96, 81)';
+
+        }
+        else {
+            localStorage.setItem('isDark', 'True');
+            theSun.style.transform = 'translateY(0px)';
+            theMoon.style.transform = 'translateY(50px)';
+            for (let i = 0; i < navLinks.length; i++) {
+                navLinks[i].style.color = 'black';
+            }
+            document.getElementById('portfolio-body').style.backgroundColor = 'white';
+            document.getElementsByClassName('nav-logo')[0].style.filter = 'invert(0)';
+            document.getElementsByClassName('footer-logo')[0].style.filter = 'invert(0)';
+            document.getElementsByClassName('footer')[0].style.backgroundColor = 'rgb(255, 110, 110)';
+        }
+    }
+
+
+</script>
+
+</html>
