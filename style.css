@@ -170,6 +170,8 @@ header {
 
 .hero-image {
     width: 80%;
+    height: 500px;
+    object-fit: cover;
     border-radius: 30px;
 }
 
