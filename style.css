@@ -386,6 +386,7 @@ html {
     max-width: 1400px;
     height: 100%;
     margin: auto;
+    text-align: center;
 }
 
 #footer-content {
@@ -458,6 +459,11 @@ html {
     border: 1px solid white;
     cursor: pointer;
     font-size: 18px;
+}
+
+#copyright {
+    color: white;
+    margin-top: 100px;
 }
 
 @media (max-width:1200px) {
