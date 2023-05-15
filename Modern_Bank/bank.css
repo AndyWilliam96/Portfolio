@@ -1,0 +1,274 @@
+@import url('https://fonts.cdnfonts.com/css/futura-md-bt');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: fit-content;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(76, 37, 97);
+    position: fixed;
+    border-bottom: 1px solid white;
+    z-index: 1;
+    padding: 20px 0;
+}
+
+.header-container {
+    width: 80%;
+    max-width: 1400px;
+    height: 100%;
+    margin: auto;
+}
+
+.header-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    color: white;
+    font-weight: 500;
+}
+
+.member-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-btn {
+    text-decoration: none;
+    color: rgb(76, 37, 97);
+    font-weight: 500;
+    background-color: rgb(0, 227, 227);
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+
+.header-btn:hover {
+    background-color: rgb(0, 205, 205);
+}
+
+.sub-header {
+    width: 100%;
+    height: 160px;
+    background-color: rgb(76, 37, 97);
+    padding-top: 110px;
+}
+
+.sub-header-container {
+    width: 80%;
+    max-width: 1400px;
+    height: 100%;
+    margin: auto;
+}
+
+.sub-header-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-header-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-weight: 500;
+}
+
+.sub-header-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-weight: 200;
+}
+
+.sub-header-item {
+    text-decoration: none;
+    color: white;
+}
+
+.sub-header-item:hover {
+    color: rgb(0, 205, 205);
+}
+
+.hero {
+    width: 100%;
+    height: fit-content;
+    background-image: linear-gradient(to right, purple, red);
+    padding: 20px 0;
+}
+
+.hero-container {
+    width: 80%;
+    max-width: 1400px;
+    height: 100%;
+    margin: auto;
+}
+
+.hero-content {
+    height: 100%;
+    padding: 75px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.hero-heading {
+    color: white;
+    text-transform: uppercase;
+}
+
+.hero-title {
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.hero-motto {
+    color: white;
+    font-size: 16px;
+}
+
+.hero-ticks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.hero-tick {
+    color: white;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.tick {
+    background-color: rgb(0, 205, 205);
+    padding: 0 5px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.rating {
+    width: 100%;
+    height: fit-content;
+    padding: 50px 0;
+}
+
+.rating-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.rating-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+}
+
+.rating-motto {
+    font-size: 34px;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(76, 37, 97);
+}
+
+.rating-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.rating-sum {
+    font-weight: 200;
+    text-align: center;
+}
+
+.new {
+    width: 100%;
+    height: fit-content;
+    padding: 50px 0;
+}
+
+.new-container {
+    width: 80%;
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+
+.new-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.new-motto {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.new-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 200px;
+}
+
+.new-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-title {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.new-title span {
+    font-size: 50px;
+}
+
+.new-sub-title {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.new-image {
+    width: 100px;
+}
+
+@media (max-width:1200px) {
+
+    .sub-header,
+    .sub-header-container {
+        display: none;
+    }
+}
