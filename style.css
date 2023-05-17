@@ -302,6 +302,12 @@ html {
     background-position: center;
 }
 
+.workout {
+    background-image: url(workout_photos/Dumbell-step-up.png);
+    background-size: cover;
+    background-position: center;
+}
+
 .project-internal {
     height: 100%;
     display: flex;
