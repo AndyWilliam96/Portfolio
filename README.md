@@ -1,10 +1,10 @@
 # Portfolio
 
-Welcome to my portfolio. I am grateful for you being here right now, looking at my work. It means I am doing SOMETHING right, and that I have something you're after! Thank you.
+Welcome to my portfolio. Please do take a look at my work.
 
-Please feel free to go through my portfolio, consisting of: 
-- Professional Resume (LIVE)
-- Hugo's Restuarant Remake Project (LIVE)
-- Modern Bank Project (Under Development)
-- Target Retail Website Project (Under Development)
-- Web App Checklist Porject (Under Development)
+My portfolio is built from scratch using HTML, CSS & JavaScript.
+
+My current projects which are still under development are:
+- Hugos Resturaunt (Rebuilding their site from scratch for their customers to utilize. Hugos is in progress taking the site from me to use).
+- MyBank.com (A modern bank website to be used in the US. It takes some design from British websites)
+- Workout Schedule (This was soley created to the fact that I don't like using notepad, and I could develop something custom to view my workouts. It's designed for mobile view.)
